@@ -1,0 +1,25 @@
+snippet template
+	\\documentclass[11pt]{article}
+	\\usepackage[english]{babel}
+	\\usepackage{minted}
+	\\usepackage{amsmath}
+	\\usepackage{amsthm}
+	\\usepackage{graphicx}
+	\\usepackage{subcaption}
+	\\usepackage{booktabs}
+	\\usepackage[left=25mm, top=25mm, bottom=30mm, right=25mm]{geometry}
+	\\usepackage[colorlinks=true, linkcolor=blue, urlcolor=cyan]{hyperref}
+
+	\\title{${1:title}}
+	\\author{Sayam Sethi}
+	\\date{${2:date}}
+
+	\\begin{document}
+
+	\\maketitle
+
+	\\tableofcontents
+
+	${3}
+
+	\\end{document}
