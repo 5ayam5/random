@@ -23,11 +23,10 @@ set $mod Mod4
 font pango:monospace 8
 
 # setting volume and music controls
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 10%+ && $refresh_i3status
-bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 10%- && $refresh_i3status
-bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 10%+
+bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 10%-
+bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86AudioPlay exec playerctl play-pause
 
 # brightness controls
